@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: VitePress-fun
-  text: Vite & Vue powered static site generator.
-  tagline: Lorem ipsum...
+  name: HanMiao-Cat
+  text: Create your own personal blog
+  # tagline: Lorem ipsum...
   image:
-    src: /dog.jpg
+    src: /logo.svg
     alt: VitePress
   actions:
     - theme: brand

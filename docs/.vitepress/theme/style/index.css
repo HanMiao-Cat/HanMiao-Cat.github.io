@@ -3,6 +3,32 @@
 } */
 
 :root {
+  /* 标题渐变 */
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #465EFB, #C2FFD8);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #006d75, #5cdbd3);
+
+   /* 图标背景 */
+ --vp-home-hero-image-background-image: linear-gradient( 135deg, #006d75 10%, #5cdbd3 10%);
+ --vp-home-hero-image-filter: blur(150px);
+
+ /* brand按钮 */
+ --vp-button-brand-border: #13c2c2;
+ --vp-button-brand-text: #fff;
+ --vp-button-brand-bg: #5cdbd3;
+
+ --vp-button-brand-hover-border: #006d75;
+ --vp-button-brand-hover-text: #fff;
+ --vp-button-brand-hover-bg: #006d75;
+
+ --vp-button-brand-active-border: #13c2c2;
+
+ /* sponsor按钮 */
+ --vp-button-sponsor-border: #006d75;
+ --vp-button-sponsor-bg: transparent;
+
+ --vp-button-sponsor-hover-border: #13c2c2;
+ --vp-button-sponsor-hover-text: #13c2c2;
+ --vp-button-sponsor-hover-bg: transparent;
+
+ --vp-button-sponsor-active-border: #13c2c2;
 }

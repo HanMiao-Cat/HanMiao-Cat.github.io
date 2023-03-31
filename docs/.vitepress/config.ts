@@ -1,10 +1,10 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "VitePress-Fun",
+  title: "Blog",
   themeConfig: {
-    // logo: '/cat.png',
-    siteTitle: "VitePress-Fun",
+    logo: "/logo.svg",
+    siteTitle: "PersonalBlog",
     socialLinks: [{ icon: "github", link: "https://github.com/HanMiao-Cat" }],
     nav: [
       { text: "Home", link: "/work/vue/vue3-template" },
