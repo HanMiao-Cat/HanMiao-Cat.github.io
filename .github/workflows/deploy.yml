@@ -1,0 +1,43 @@
+
+name: Deploy Github Page
+
+# 每当 push 到 master 分支时触发部署
+on:
+  # 在【master】分支推送事件时触发工作流
+  push:
+    branches: [master]
+
+# 定义工作流
+jobs:
+  # This workflow contains a single job called "build"
+
+  # 任务：构建
+  build:
+    runs-on: ubuntu-latest
+
+    # 设置执行权限
+    permissions:
+      contents: write
+
+    # 定义步骤
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 步骤：安装 Node.js 环境
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 16
+
+      - run: npm install
+      - run: npm run build
+
+      # 步骤：部署至gh-pages分支上
+      - name: To Github Page
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+
+          publish_dir: ./docs/.vitepress/dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
